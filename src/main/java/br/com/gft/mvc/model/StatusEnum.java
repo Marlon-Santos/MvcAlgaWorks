@@ -1,11 +1,16 @@
 package br.com.gft.mvc.model;
 
 public enum StatusEnum {
-    PENDENTE("pendente"),
-    RECEBIDO("recebido"),
+    PENDENTE("Pendente"),
+    RECEBIDO("Recebido");
 
-    StatusEnum(String pendente , String recebido) {
-        PENDENTE = pendente;
-        RECEBIDO = recebido;
+    private String description;
+
+    StatusEnum(String description) {
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }
