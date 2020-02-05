@@ -38,4 +38,5 @@ public class HomeController {
     public List<StatusEnum> statusEnum(){
         return Arrays.asList(StatusEnum.values());
     }
+    //test
 }
