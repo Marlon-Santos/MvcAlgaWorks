@@ -2,7 +2,8 @@ package br.com.gft.mvc.model;
 
 public enum StatusEnum {
     PENDENTE("Pendente"),
-    RECEBIDO("Recebido");
+    RECEBIDO("Recebido"),
+    CANCELADO("Cancelado");
 
     private String description;
 
