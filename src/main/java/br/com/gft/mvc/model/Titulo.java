@@ -13,7 +13,7 @@ public class Titulo {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
-    @Temporal(TemporalType.DATE) @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Temporal(TemporalType.DATE) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private Date date;
     private BigDecimal value;
     @Enumerated(EnumType.STRING)
